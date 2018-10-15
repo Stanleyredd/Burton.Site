@@ -4,33 +4,77 @@
     <link rel="stylesheet" type="text/css" href="css/burton.css">
     <meta charset="UTF-8">
     <title>Burton Education</title>
+    <style>
+
+
+
+
+
+
+    </style>
 </head>
 <body>
-<style>
 
-</style>
 <form action="https://www.savatarian.com/html5/form.php" method="post">
+   <div class="form-group">
     <ul>
         <li>
             <h2>Burton Education</h2>
+            <span class="verplicht">* verplicht veld</span>
+        </li>
+        <li>
+            <label for="voornaam">Voornaam</label>
+            <input type="text" name="voornaam" required />
         </li>
 
         <li>
-            <label for="voornaam">Voornaam</label>
-            <input type="text" id="voornaam" name="voornaam">
+            <label for="tussenvoegsel">Tussenvoegsel</label>
+            <input type="text" name="tussenvoegsel"  />
         </li>
 
         <li>
             <label for="achternaam">Achternaam</label>
-            <input type="text"id="achternaam" name="achternaam">
+            <input type="text" name="achternaam" required />
         </li>
 
         <li>
-            <input type="submit" name="knop">
+            <label for="geslacht">Geslacht</label>
+            <input type="radio" name="gender" value="man"> Man
+            <input type="radio" name="gender" value="vrouw"> Vrouw
+
+        </li>
+
+        <li>
+            <label for="kleur-ogen">Kleur ogen</label>
+            <select name="kleur-ogen">
+            <option>groen</option>
+            <option>blauw</option>
+            <option>bruin</option>
+            </select>
+        </li>
+
+        <li>
+            <label for="geboorte-datum">Geboorte-datumn</label>
+            <input type="date" name="geboorte-datum">
+
+        </li>
+
+        <li>
+            <label for="omschrijving">Omschrijving</label>
+            <textarea name="omschrijving" cols="30" rows="10"></textarea>
+
+
         </li>
 
 
+
+
     </ul>
+   </div>
+</form>
+
+
+
 
 </body>
 </html>
