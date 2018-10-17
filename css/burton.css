@@ -1,7 +1,4 @@
-* {
-    border: dotted 1px;
-    box-sizing: border-box;
-}
+
 div#wrapper, footer {
     padding: 20px;
     margin:auto;
