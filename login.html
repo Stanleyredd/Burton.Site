@@ -29,44 +29,55 @@
            float: left;
            width: 50%;
            height: 100%;
-
        }
+        .kleiner {
+            width: 50%;
+        }
+
+
+
 
     </style>
 </head>
-<body>
+<form action="http://www.savatarian.com/html5/form.php">
 
 
 <div class="grid-container">
+
+
     <div class="grid-container2">
 
+
         <label>Voornaam</label><input type="text" required>
+
 
         <label>Tussenvoegsel</label><input type="text">
 
         <label>Achternaam</label><input type="text"required>
 
         <label>Geslacht</label>
-        <div>
-            Man  <input id="man" type="radio">
-            Vrouw<input id="vrouw" type="radio">
+        <div id="man-vrouw">
+            Man <input type="radio" name="geslacht" value="man" checked >
+            Vrouw <input type="radio" name="geslacht" value="vrouw" >
         </div>
 
 
         <label>Kleur ogen</label>
-        <select name="kleur-ogen">
+        <select class="kleiner" name="kleur-ogen">
             <option>groen</option>
             <option>blauw</option>
             <option>bruin</option>
         </select>
 
-        <label>Geboorte datum</label><input type="date" name="geboorte-datum">
+        <label >Geboorte datum</label><input class="kleiner" type="date" name="geboorte-datum" required>
 
         <label>Omschrijving</label>
             <textarea name="omschrijving" cols="30" rows="10"></textarea>
     </div>
 
     <div class="grid-container3">
+
+
         <label for="lekker-eten">Lekker eten</label>
 
         <div>
@@ -81,12 +92,13 @@
         <br><br><br><br><br><br><br><br><br><br><br><br>
 
         <div id="knoppen">
-        <input id="annuleer" type="button" name="annuleer">
+
+        <input id="annuleer" type="reset" name="annuleer">
         <input id="submit" type="submit" name="submit">
         </div>
 
     </div>
 </div>
-
+</form>
 </body>
 </html>
